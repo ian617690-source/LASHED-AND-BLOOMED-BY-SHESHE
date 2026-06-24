@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lashed and Bloomed BY SHESHE — Premium Lash Extensions Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 50: '#f0f4fa', 100: '#dce4f2', 200: '#b8c9e5', 300: '#8da9d4', 400: '#5e87bf', 500: '#3d6a9e', 600: '#2d5a8e', 700: '#1e3a5f', 800: '#152c4a', 900: '#0d1f35' },
+            sky: { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+            gold: { 50: '#fdf9ef', 100: '#faf0d5', 200: '#f4dea8', 300: '#edc871', 400: '#e5ad3e', 500: '#df9822', 600: '#cb7a18', 700: '#a95916', 800: '#88461a', 900: '#6e3a19' },
+            cream: '#faf7f2',
+            charcoal: '#2d2d2d',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .hero-gradient { background: linear-gradient(135deg, #f0f4fa 0%, #faf7f2 40%, #fdf9ef 100%); }
+    .gold-gradient { background: linear-gradient(135deg, #e5ad3e, #df9822); }
+    .navy-gradient { background: linear-gradient(135deg, #1e3a5f, #0d1f35); }
+    .sky-gradient { background: linear-gradient(135deg, #0ea5e9, #0284c7); }
+    .executive-gradient { background: linear-gradient(135deg, #1e3a5f, #3d6a9e, #0ea5e9); }
+    .shimmer { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); background-size: 200% 100%; animation: shimmer 2s infinite; }
+    @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .float-animation { animation: float 3s ease-in-out infinite; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .delay-100 { animation-delay: 0.1s; opacity: 0; }
+    .delay-200 { animation-delay: 0.2s; opacity: 0; }
+    .delay-300 { animation-delay: 0.3s; opacity: 0; }
+    .delay-400 { animation-delay: 0.4s; opacity: 0; }
+    .delay-500 { animation-delay: 0.5s; opacity: 0; }
+    .glass-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.5); }
+    .service-card:hover .service-img { transform: scale(1.08); }
+    .service-card:hover { box-shadow: 0 20px 60px rgba(30,58,95,0.15); }
+    .pricing-card:hover { transform: translateY(-8px); }
+    .pricing-popular { border: 2px solid #e5ad3e; position: relative; }
+    .pricing-popular::before { content: 'Most Popular'; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #e5ad3e, #df9822); color: white; padding: 4px 20px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; }
+    .testimonial-track { display: flex; transition: transform 0.5s ease; }
+    .sparkle { position: absolute; width: 4px; height: 4px; background: #e5ad3e; border-radius: 50%; animation: sparkle 2s ease-in-out infinite; }
+    @keyframes sparkle { 0%, 100% { opacity: 0; transform: scale(0); } 50% { opacity: 1; transform: scale(1); } }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #0ea5e9, #e5ad3e); transition: width 0.3s ease; }
+    .nav-link:hover::after { width: 100%; }
+    input:focus, textarea:focus, select:focus { outline: none; box-shadow: 0 0 0 3px rgba(14,165,233,0.2); }
+    .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+    .mobile-menu.active { transform: translateX(0); }
+    .policy-card { border-left: 4px solid; }
+    .tier-badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-lg border-b border-navy-100/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="font-display text-xl sm:text-2xl font-bold text-charcoal">Lashed & <span class="text-navy-700">Bloomed</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">Services</a>
+          <a href="#about" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">About</a>
+          <a href="#pricing" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">Pricing</a>
+          <a href="#gallery" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">Gallery</a>
+          <a href="#testimonials" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">Reviews</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-charcoal transition">Contact</a>
+        </div>
+        <div class="hidden md:block">
+          <a href="#booking" class="inline-flex items-center gap-2 gold-gradient text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-gold-300/50 transition-all duration-300">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            Book Now
+          </a>
+        </div>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-navy-50 transition">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-[60] shadow-2xl p-6">
+    <div class="flex justify-between items-center mb-8">
+      <span class="font-display text-xl font-bold">Lashed & <span class="text-navy-700">Bloomed</span></span>
+      <button id="closeMobileMenu" class="p-2 rounded-lg hover:bg-navy-50">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-4">
+      <a href="#services" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">Services</a>
+      <a href="#about" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">About</a>
+      <a href="#pricing" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">Pricing</a>
+      <a href="#gallery" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">Gallery</a>
+      <a href="#testimonials" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">Reviews</a>
+      <a href="#contact" class="mobile-link py-3 px-4 rounded-xl hover:bg-navy-50 font-medium transition">Contact</a>
+      <a href="#booking" class="mt-4 gold-gradient text-white text-center px-6 py-3 rounded-full font-semibold">Book Now</a>
+    </div>
+  </div>
+  <div id="mobileOverlay" class="fixed inset-0 bg-black/30 z-[55] hidden"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient min-h-screen flex items-center pt-20 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-20 right-10 w-72 h-72 bg-navy-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-96 h-96 bg-gold-200/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-40 left-1/3 w-64 h-64 bg-sky-200/20 rounded-full blur-3xl"></div>
+    <div class="sparkle" style="top:25%; left:15%; animation-delay:0s;"></div>
+    <div class="sparkle" style="top:35%; left:80%; animation-delay:0.5s;"></div>
+    <div class="sparkle" style="top:60%; left:25%; animation-delay:1s;"></div>
+    <div class="sparkle" style="top:70%; left:70%; animation-delay:1.5s;"></div>
+    <div class="sparkle" style="top:15%; left:50%; animation-delay:0.8s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-0">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-center md:text-left">
+          <div class="animate-fade-in-up">
+            <span class="inline-flex items-center gap-2 bg-navy-100 text-navy-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+              <i data-lucide="award" class="w-4 h-4"></i>
+              Premium Lash Studio — Thika Road
+            </span>
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight animate-fade-in-up delay-100">
+            Lashed &amp;
+            <span class="block text-navy-700">Bloomed</span>
+            <span class="block text-gold-500">BY SHESHE</span>
+          </h1>
+          <p class="mt-6 text-gray-600 text-lg max-w-lg mx-auto md:mx-0 animate-fade-in-up delay-200">
+            Experience the art of premium lash extensions. Custom-designed to enhance your natural beauty — with house calls available for your convenience.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up delay-300">
+            <a href="#booking" class="inline-flex items-center justify-center gap-2 gold-gradient text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:shadow-gold-300/40 transition-all duration-300">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+              Book Your Session
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center gap-2 bg-white text-charcoal px-8 py-4 rounded-full font-semibold text-lg border-2 border-navy-200 hover:border-navy-400 hover:bg-navy-50 transition-all duration-300">
+              Explore Services
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+          <!-- Stats -->
+          <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-8 animate-fade-in-up delay-400">
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-charcoal font-display">2+</div>
+              <div class="text-sm text-gray-500">Years Experience</div>
+            </div>
+            <div class="w-px bg-navy-200 hidden md:block"></div>
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-charcoal font-display">4.9</div>
+              <div class="text-sm text-gray-500">Star Rating ⭐</div>
+            </div>
+            <div class="w-px bg-navy-200 hidden md:block"></div>
+            <div class="text-center md:text-left">
+              <div class="text-3xl font-bold text-charcoal font-display">🎁</div>
+              <div class="text-sm text-gray-500">Free Plushees</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative flex justify-center animate-fade-in-up delay-300">
+          <div class="relative">
+            <div class="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl shadow-navy-200/50">
+              <img src="http://static.photos/cosmetic/640x360/77" alt="Beautiful lash extension" class="w-full h-full object-cover">
+            </div>
+            <!-- Floating cards -->
+            <div class="absolute -top-4 -right-4 glass-card rounded-2xl p-3 float-animation shadow-lg">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-navy-100 flex items-center justify-center">
+                  <i data-lucide="heart" class="w-4 h-4 text-navy-600"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-semibold">House Calls</div>
+                  <div class="text-[10px] text-gray-400">We come to you</div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -bottom-4 -left-4 glass-card rounded-2xl p-3 float-animation shadow-lg" style="animation-delay: 1s;">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-gold-600"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-semibold">Certified Expert</div>
+                  <div class="text-[10px] text-gray-400">By Sheshe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          Our Services
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Lash Styles <span class="text-navy-700">Tailored</span> For You
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Every eye shape is unique — we customize each set to compliment your natural beauty perfectly.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Service 1 - Cat Eye -->
+        <div class="service-card group bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 cursor-pointer">
+          <div class="h-48 overflow-hidden">
+            <img src="http://static.photos/cosmetic/640x360/10" alt="Cat Eye Lashes" class="service-img w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-navy-100 flex items-center justify-center">
+                <i data-lucide="eye" class="w-5 h-5 text-navy-600"></i>
+              </div>
+              <h3 class="font-display text-lg font-bold">Cat Eye</h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">Sultry, elongated lash style that creates a feline-inspired look. Outer corners are extended for that perfect cat-eye flick.</p>
+            <div class="mt-3 space-y-1">
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Basic</span><span class="text-navy-700 font-semibold">KSH 400</span></div>
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Mid Volume</span><span class="text-navy-700 font-semibold">KSH 600</span></div>
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Volume</span><span class="text-navy-700 font-semibold">KSH 800</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 - Wispy (Spikes) -->
+        <div class="service-card group bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 cursor-pointer">
+          <div class="h-48 overflow-hidden">
+            <img src="http://static.photos/cosmetic/640x360/22" alt="Wispy Spikes Lashes" class="service-img w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center">
+                <i data-lucide="stars" class="w-5 h-5 text-sky-500"></i>
+              </div>
+              <h3 class="font-display text-lg font-bold">Wispy <span class="text-sm font-normal text-gray-400">(Spikes)</span></h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">Textured, spiky lash style with alternating lengths for a feathery, wispy appearance. Bold yet beautifully natural.</p>
+            <div class="mt-3 space-y-1">
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Basic</span><span class="text-navy-700 font-semibold">KSH 500</span></div>
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Mid Volume</span><span class="text-navy-700 font-semibold">KSH 700</span></div>
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Volume</span><span class="text-navy-700 font-semibold">KSH 900</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 - Wet Set -->
+        <div class="service-card group bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 cursor-pointer pricing-popular">
+          <div class="h-48 overflow-hidden">
+            <img src="http://static.photos/cosmetic/640x360/35" alt="Wet Set Lashes" class="service-img w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl gold-gradient flex items-center justify-center">
+                <i data-lucide="droplets" class="w-5 h-5 text-white"></i>
+              </div>
+              <h3 class="font-display text-lg font-bold">Wet Set</h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">Glossy, just-stepped-out-of-the-pool look. Spiky fans with a wet effect that's bold, dramatic, and trendsetting.</p>
+            <div class="mt-3 space-y-1">
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Basic</span><span class="text-navy-700 font-semibold">KSH 500</span></div>
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Volume</span><span class="text-navy-700 font-semibold">KSH 1,000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 - Classic -->
+        <div class="service-card group bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 cursor-pointer">
+          <div class="h-48 overflow-hidden">
+            <img src="http://static.photos/cosmetic/640x360/48" alt="Classic Lashes" class="service-img w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-xl bg-navy-100 flex items-center justify-center">
+                <i data-lucide="feather" class="w-5 h-5 text-navy-600"></i>
+              </div>
+              <h3 class="font-display text-lg font-bold">Classic</h3>
+            </div>
+            <p class="text-gray-500 text-sm leading-relaxed">Timeless 1:1 lash extension technique. Natural-looking elegance for a subtle, everyday glamour that never goes out of style.</p>
+            <div class="mt-3 space-y-1">
+              <div class="flex justify-between text-sm"><span class="text-gray-400">Basic Set</span><span class="text-navy-700 font-semibold">KSH 400</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="mt-12 bg-gradient-to-r from-navy-800 to-navy-700 rounded-3xl p-8 md:p-10 text-white">
+        <h3 class="font-display text-2xl font-bold mb-6 text-center">Add-Ons & Extras</h3>
+        <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div class="text-center">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="palette" class="w-7 h-7 text-sky-300"></i>
+            </div>
+            <h4 class="font-semibold text-lg">Colour</h4>
+            <p class="text-white/60 text-sm mt-1">Coloured lash accents</p>
+            <div class="mt-2 text-gold-300 font-bold text-xl">KSH 100</div>
+          </div>
+          <div class="text-center">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="gem" class="w-7 h-7 text-gold-300"></i>
+            </div>
+            <h4 class="font-semibold text-lg">Charm</h4>
+            <p class="text-white/60 text-sm mt-1">Decorative lash charms</p>
+            <div class="mt-2 text-gold-300 font-bold text-xl">KSH 150</div>
+          </div>
+          <div class="text-center">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="trash-2" class="w-7 h-7 text-sky-300"></i>
+            </div>
+            <h4 class="font-semibold text-lg">Removal</h4>
+            <p class="text-white/60 text-sm mt-1">Safe lash removal</p>
+            <div class="mt-2 text-gold-300 font-bold text-xl">KSH 150</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-28 bg-cream relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-navy-100/30 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl shadow-navy-200/30">
+            <img src="http://static.photos/people/640x360/42" alt="Sheshe at work" class="w-full h-96 object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center">
+                <i data-lucide="trophy" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-lg font-display">2+ Years</div>
+                <div class="text-sm text-gray-400">Trusted Lash Artist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            About Sheshe
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+            Where <span class="text-navy-700">Artistry</span> Meets <span class="text-gold-500">Precision</span>
+          </h2>
+          <p class="mt-6 text-gray-500 leading-relaxed">
+            Welcome to Lashed and Bloomed BY SHESHE — where every lash tells a story. With over 2 years of dedicated experience, Sheshe has perfected the art of creating lash looks that feel uniquely you.
+          </p>
+          <p class="mt-4 text-gray-500 leading-relaxed">
+            We use only premium, medical-grade adhesives and the finest synthetic fibers. Your safety and comfort are our top priorities, and every set is crafted with love and attention to detail. Plus, we offer house calls for your ultimate convenience! 🏠
+          </p>
+
+          <div class="mt-8 grid grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="badge-check" class="w-5 h-5 text-navy-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Certified & Skilled</div>
+                <div class="text-xs text-gray-400">Trained professional</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="leaf" class="w-5 h-5 text-gold-500"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Cruelty-Free</div>
+                <div class="text-xs text-gray-400">100% vegan products</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="shield" class="w-5 h-5 text-navy-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Medical Grade</div>
+                <div class="text-xs text-gray-400">Safe, hypoallergenic glue</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="home" class="w-5 h-5 text-gold-500"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">House Calls</div>
+                <div class="text-xs text-gray-400">We come to you!</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#booking" class="mt-8 inline-flex items-center gap-2 text-navy-600 font-semibold hover:text-navy-800 transition group">
+            Book With Sheshe
+            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-gold-50 text-gold-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="tag" class="w-4 h-4"></i>
+          Transparent Pricing
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Choose Your <span class="text-gold-500">Glam</span> Level
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">No hidden fees. All prices in Kenya Shillings (KSH). Add-ons available for any style.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Classic -->
+        <div class="pricing-card bg-cream rounded-2xl p-8 text-center transition-all duration-300 hover:shadow-xl">
+          <div class="w-14 h-14 rounded-2xl bg-navy-100 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="feather" class="w-7 h-7 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold">Classic</h3>
+          <p class="text-gray-400 text-sm mt-2">Timeless & Natural</p>
+          <div class="my-6">
+            <span class="text-4xl font-bold font-display text-navy-800">KSH 400</span>
+            <div class="text-xs text-gray-400 mt-1">Basic Set</div>
+          </div>
+          <ul class="text-sm text-gray-500 space-y-3 text-left mb-8">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-navy-500"></i>1:1 lash application</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-navy-500"></i>Natural elegance</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-navy-500"></i>Free consultation</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-navy-500"></i>Aftercare guide</li>
+          </ul>
+          <a href="#booking" class="block w-full py-3 rounded-full border-2 border-navy-200 text-navy-600 font-semibold hover:bg-navy-700 hover:text-white hover:border-navy-700 transition-all duration-300">Select</a>
+        </div>
+
+        <!-- Cat Eye -->
+        <div class="pricing-card bg-cream rounded-2xl p-8 text-center transition-all duration-300 hover:shadow-xl">
+          <div class="w-14 h-14 rounded-2xl bg-sky-100 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="eye" class="w-7 h-7 text-sky-600"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold">Cat Eye</h3>
+          <p class="text-gray-400 text-sm mt-2">Sultry & Elongated</p>
+          <div class="my-4">
+            <div class="space-y-2">
+              <div class="bg-navy-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Basic</span>
+                <span class="font-bold text-navy-700">KSH 400</span>
+              </div>
+              <div class="bg-sky-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Mid Volume</span>
+                <span class="font-bold text-navy-700">KSH 600</span>
+              </div>
+              <div class="bg-gold-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Volume</span>
+                <span class="font-bold text-navy-700">KSH 800</span>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="block w-full py-3 rounded-full border-2 border-sky-200 text-sky-600 font-semibold hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-300">Select</a>
+        </div>
+
+        <!-- Wispy (Popular) -->
+        <div class="pricing-card pricing-popular bg-cream rounded-2xl p-8 text-center transition-all duration-300 hover:shadow-xl">
+          <div class="w-14 h-14 rounded-2xl gold-gradient flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="stars" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold">Wispy</h3>
+          <p class="text-gray-400 text-sm mt-2">Textured & Spiky</p>
+          <div class="my-4">
+            <div class="space-y-2">
+              <div class="bg-navy-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Basic</span>
+                <span class="font-bold text-navy-700">KSH 500</span>
+              </div>
+              <div class="bg-sky-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Mid Volume</span>
+                <span class="font-bold text-navy-700">KSH 700</span>
+              </div>
+              <div class="bg-gold-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Volume</span>
+                <span class="font-bold text-navy-700">KSH 900</span>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="block w-full py-3 rounded-full gold-gradient text-white font-semibold hover:shadow-lg hover:shadow-gold-300/50 transition-all duration-300">Select</a>
+        </div>
+
+        <!-- Wet Set -->
+        <div class="pricing-card bg-cream rounded-2xl p-8 text-center transition-all duration-300 hover:shadow-xl">
+          <div class="w-14 h-14 rounded-2xl bg-navy-100 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplets" class="w-7 h-7 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold">Wet Set</h3>
+          <p class="text-gray-400 text-sm mt-2">Glossy & Dramatic</p>
+          <div class="my-4">
+            <div class="space-y-2">
+              <div class="bg-navy-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Basic</span>
+                <span class="font-bold text-navy-700">KSH 500</span>
+              </div>
+              <div class="bg-gold-50 rounded-lg py-2 px-3 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Volume</span>
+                <span class="font-bold text-navy-700">KSH 1,000</span>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="block w-full py-3 rounded-full border-2 border-navy-200 text-navy-600 font-semibold hover:bg-navy-700 hover:text-white hover:border-navy-700 transition-all duration-300">Select</a>
+        </div>
+      </div>
+
+      <!-- Add-ons reminder -->
+      <div class="mt-8 text-center">
+        <p class="text-gray-400 text-sm">Add-ons: <span class="font-semibold text-navy-600">Colour KSH 100</span> · <span class="font-semibold text-gold-600">Charm KSH 150</span> · <span class="font-semibold text-navy-600">Removal KSH 150</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="image" class="w-4 h-4"></i>
+          Our Work
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Lash <span class="text-navy-700">Transformations</span>
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">See the stunning results our clients love. Every set is a masterpiece by Sheshe.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="row-span-2 rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/640x360/55" alt="Lash result" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Cat Eye Volume</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/320x240/11" alt="Lash result" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Classic Set</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/320x240/23" alt="Lash result" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Wispy Spikes</span>
+          </div>
+        </div>
+        <div class="row-span-2 rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/640x360/88" alt="Lash result" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Wet Set Volume</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/320x240/36" alt="Lash result" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Cat Eye Basic</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/320x240/49" alt="Lash result" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">Wispy Mid Volume</span>
+          </div>
+        </div>
+        <div class="col-span-2 rounded-2xl overflow-hidden group cursor-pointer relative">
+          <img src="http://static.photos/cosmetic/1200x630/99" alt="Lash result" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-white font-medium text-sm">With Charm Add-On ✨</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 md:py-28 bg-white relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-navy-50/50 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-gold-50 text-gold-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Client Love
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          What Our <span class="text-gold-500">Clients</span> Say
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Real reviews from real people who love their lashes.</p>
+      </div>
+
+      <div class="relative overflow-hidden">
+        <div id="testimonialTrack" class="testimonial-track">
+          <!-- Testimonial 1 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"Sheshe did my cat eye volume set and I am OBSESSED! The elongation is perfect and they're so lightweight. Plus she came to my house — how convenient is that? 💕"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-navy-200 flex items-center justify-center font-bold text-navy-700">WN</div>
+                <div>
+                  <div class="font-semibold text-sm">Wanjiku N.</div>
+                  <div class="text-xs text-gray-400">Cat Eye Volume Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"My wispy spikes look SO good — people think I'm wearing premium mascara 😂 The studio is so clean and Sheshe is so sweet. And the free plushees were such a nice surprise!"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gold-200 flex items-center justify-center font-bold text-gold-700">AK</div>
+                <div>
+                  <div class="font-semibold text-sm">Amina K.</div>
+                  <div class="text-xs text-gray-400">Wispy Spikes Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"As someone with sensitive eyes, I was nervous. But Sheshe made me feel so comfortable and used sensitive glue. No irritation at all! My wet set is everything 🔥"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-navy-200 flex items-center justify-center font-bold text-navy-700">FM</div>
+                <div>
+                  <div class="font-semibold text-sm">Fatma M.</div>
+                  <div class="text-xs text-gray-400">Wet Set Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"Got the classic set for my everyday look and it's perfect. So natural but enhanced. Sheshe really knows what she's doing. Will definitely be back for a cat eye next!"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gold-200 flex items-center justify-center font-bold text-gold-700">JO</div>
+                <div>
+                  <div class="font-semibold text-sm">Joy O.</div>
+                  <div class="text-xs text-gray-400">Classic Set Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"The colour add-on with my cat eye was the best decision! Blue tips on my volume set — I get compliments everywhere. Lashed and Bloomed is the real deal 💙"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-navy-200 flex items-center justify-center font-bold text-navy-700">NW</div>
+                <div>
+                  <div class="font-semibold text-sm">Njeri W.</div>
+                  <div class="text-xs text-gray-400">Cat Eye + Colour Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 6 -->
+          <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="bg-cream rounded-2xl p-8 h-full">
+              <div class="flex gap-1 mb-4">
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">"House call service is a GAME CHANGER! Sheshe came to my place, set up everything so professionally, and my wispy mid volume set is stunning. 10/10 recommend!"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gold-200 flex items-center justify-center font-bold text-gold-700">SM</div>
+                <div>
+                  <div class="font-semibold text-sm">Sharon M.</div>
+                  <div class="text-xs text-gray-400">House Call Client</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <div class="flex justify-center gap-3 mt-8">
+          <button id="prevBtn" class="w-12 h-12 rounded-full bg-navy-100 flex items-center justify-center hover:bg-navy-200 transition">
+            <i data-lucide="chevron-left" class="w-5 h-5 text-navy-600"></i>
+          </button>
+          <button id="nextBtn" class="w-12 h-12 rounded-full bg-navy-100 flex items-center justify-center hover:bg-navy-200 transition">
+            <i data-lucide="chevron-right" class="w-5 h-5 text-navy-600"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Policies Section -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="scroll-text" class="w-4 h-4"></i>
+          Booking Policies
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Important <span class="text-navy-700">Booking</span> Info
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Please read our policies before booking. Deposits accepted via M-Pesa.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="policy-card bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300" style="border-left-color: #1e3a5f;">
+          <div class="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-4">
+            <i data-lucide="banknote" class="w-6 h-6 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Deposits</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">A refundable <strong class="text-navy-700">KSH 200</strong> deposit is required to confirm your booking. It's deducted from your final bill on the day.</p>
+        </div>
+        <div class="policy-card bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300" style="border-left-color: #0ea5e9;">
+          <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center mb-4">
+            <i data-lucide="calendar-clock" class="w-6 h-6 text-sky-500"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Reschedule</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Free reschedules with at least <strong class="text-sky-600">24 hours' notice</strong>. Your deposit moves with you to the new date.</p>
+        </div>
+        <div class="policy-card bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300" style="border-left-color: #e5ad3e;">
+          <div class="w-12 h-12 rounded-xl bg-gold-50 flex items-center justify-center mb-4">
+            <i data-lucide="clock" class="w-6 h-6 text-gold-500"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Late Arrivals</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Please arrive on time. Arrival <strong class="text-gold-600">over 15 minutes late</strong> may need to rebook and forfeit the deposit.</p>
+        </div>
+        <div class="policy-card bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300" style="border-left-color: #1e3a5f;">
+          <div class="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center mb-4">
+            <i data-lucide="x-circle" class="w-6 h-6 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">No Shows</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Missed appointments without notice <strong class="text-navy-700">forfeit the deposit</strong> and require a new one for future bookings.</p>
+        </div>
+      </div>
+
+      <!-- M-Pesa & House Calls notice -->
+      <div class="mt-10 grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="bg-navy-800 text-white rounded-2xl p-6 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="smartphone" class="w-5 h-5 text-sky-300"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">M-Pesa Payments</h4>
+            <p class="text-white/70 text-sm">Deposit details shared via WhatsApp at the time of booking. Quick and easy!</p>
+          </div>
+        </div>
+        <div class="bg-gold-500 text-white rounded-2xl p-6 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">House Calls Available 🏠</h4>
+            <p class="text-white/80 text-sm">Can't come to us? We'll come to you! Ask about our house call service when booking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / CTA Section -->
+  <section id="booking" class="py-20 md:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 executive-gradient"></div>
+    <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+        Easy Online Booking
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        Ready For Your <br>Lash Transformation?
+      </h2>
+      <p class="mt-6 text-white/80 text-lg max-w-xl mx-auto">
+        Book your appointment today and step out with lashes that make you feel unstoppable. 🎁 Free plushees and discounted items for our clients!
+      </p>
+
+      <form id="bookingForm" class="mt-10 bg-white rounded-3xl p-8 md:p-10 text-left max-w-2xl mx-auto shadow-2xl">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+            <input type="text" placeholder="Your name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Phone / WhatsApp</label>
+            <input type="tel" placeholder="+254 7XX XXX XXX" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Service</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm bg-white" required>
+              <option value="">Choose a service</option>
+              <optgroup label="Cat Eye">
+                <option>Cat Eye Basic — KSH 400</option>
+                <option>Cat Eye Mid Volume — KSH 600</option>
+                <option>Cat Eye Volume — KSH 800</option>
+              </optgroup>
+              <optgroup label="Wispy (Spikes)">
+                <option>Wispy Basic — KSH 500</option>
+                <option>Wispy Mid Volume — KSH 700</option>
+                <option>Wispy Volume — KSH 900</option>
+              </optgroup>
+              <optgroup label="Wet Set">
+                <option>Wet Set Basic — KSH 500</option>
+                <option>Wet Set Volume — KSH 1,000</option>
+              </optgroup>
+              <optgroup label="Classic">
+                <option>Classic Basic Set — KSH 400</option>
+              </optgroup>
+              <optgroup label="Add-Ons">
+                <option>Colour Add-On — KSH 100</option>
+                <option>Charm Add-On — KSH 150</option>
+                <option>Removal — KSH 150</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Booking Type</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm bg-white" required>
+              <option value="">Studio or House Call?</option>
+              <option>Studio Visit — Thika Road</option>
+              <option>House Call — I'll share my location</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+            <input type="date" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
+            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm bg-white" required>
+              <option value="">Choose a time</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-6">
+          <label class="block text-sm font-medium text-gray-700 mb-2">Special Requests (Optional)</label>
+          <textarea rows="3" placeholder="Any allergies, preferences, sensitive eyes, special occasions..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-400 transition text-sm resize-none"></textarea>
+        </div>
+        <!-- Deposit notice -->
+        <div class="mt-4 bg-navy-50 rounded-xl p-4 flex items-start gap-3">
+          <i data-lucide="info" class="w-5 h-5 text-navy-500 flex-shrink-0 mt-0.5"></i>
+          <div class="text-xs text-navy-700">
+            <strong>Deposit Required:</strong> A refundable KSH 200 deposit via M-Pesa is needed to confirm your booking. Details will be shared via WhatsApp. The deposit is deducted from your final bill.
+          </div>
+        </div>
+        <button type="submit" class="mt-6 w-full gold-gradient text-white py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:shadow-gold-300/40 transition-all duration-300 flex items-center justify-center gap-2">
+          <i data-lucide="calendar-check" class="w-5 h-5"></i>
+          Confirm Booking
+        </button>
+        <p class="mt-3 text-center text-xs text-gray-400">🎁 Free plushees & discounted items for clients! We'll confirm your appointment via WhatsApp within 1 hour.</p>
+      </form>
+
+      <!-- Success message (hidden by default) -->
+      <div id="bookingSuccess" class="hidden mt-10 bg-white rounded-3xl p-8 md:p-10 max-w-lg mx-auto shadow-2xl text-center">
+        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="check-circle" class="w-8 h-8 text-green-500"></i>
+        </div>
+        <h3 class="font-display text-2xl font-bold text-charcoal">Booking Request Sent!</h3>
+        <p class="mt-2 text-gray-500">We'll confirm your appointment via WhatsApp within 1 hour. M-Pesa deposit details will be shared there. Can't wait to give you gorgeous lashes! 💖</p>
+        <a href="#" class="mt-6 inline-flex items-center gap-2 text-navy-600 font-semibold hover:text-navy-800 transition">
+          Back to Home
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aftercare Tips -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="lightbulb" class="w-4 h-4"></i>
+          Pro Tips
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Lash <span class="text-navy-700">Aftercare</span> Guide
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Keep your lashes looking flawless for weeks with these expert tips from Sheshe.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-navy-50 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplets" class="w-7 h-7 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Stay Dry 24hrs</h3>
+          <p class="text-gray-400 text-sm">Avoid water, steam, and sweat for the first 24 hours after your appointment.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-gold-50 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brush" class="w-7 h-7 text-gold-500"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Brush Daily</h3>
+          <p class="text-gray-400 text-sm">Use a clean spoolie to gently brush your lashes every morning.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-sky-50 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="ban" class="w-7 h-7 text-sky-500"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">No Oil Products</h3>
+          <p class="text-gray-400 text-sm">Oil-based makeup removers break down lash glue. Use oil-free formulas only.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-navy-50 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="moon" class="w-7 h-7 text-navy-600"></i>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Sleep on Your Back</h3>
+          <p class="text-gray-400 text-sm">Avoid crushing your lashes while sleeping. A silk pillowcase helps too!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-navy-50 text-navy-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            Get In Touch
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+            Visit Our <span class="text-navy-700">Studio</span>
+          </h2>
+          <p class="mt-4 text-gray-500 leading-relaxed">
+            We'd love to welcome you! Walk-ins welcome based on availability, but appointments are recommended. House calls also available! 🏠
+          </p>
+
+          <div class="mt-8 space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6 text-navy-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold">Location</div>
+                <div class="text-gray-400 text-sm">Around Thika Road<br>Nairobi, Kenya</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone" class="w-6 h-6 text-gold-500"></i>
+              </div>
+              <div>
+                <div class="font-semibold">Phone / WhatsApp</div>
+                <div class="text-gray-400 text-sm">+254 793 833 776</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="clock" class="w-6 h-6 text-sky-500"></i>
+              </div>
+              <div>
+                <div class="font-semibold">Hours</div>
+                <div class="text-gray-400 text-sm">
+                  Monday – Saturday: 9am – 7pm<br>
+                  Sunday: <span class="text-red-400 font-medium">Closed</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="home" class="w-6 h-6 text-navy-600"></i>
+              </div>
+              <div>
+                <div class="font-semibold">House Calls</div>
+                <div class="text-gray-400 text-sm">Available upon request — we come to you!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-4">
+            <a href="https://wa.me/254793833776" target="_blank" class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center hover:bg-green-200 transition" title="WhatsApp">
+              <i data-lucide="message-circle" class="w-5 h-5 text-green-600"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lashed_by_sh3she" target="_blank" class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center hover:bg-navy-200 transition" title="TikTok">
+              <i data-lucide="music" class="w-5 h-5 text-navy-600"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center hover:bg-sky-200 transition" title="Instagram">
+              <i data-lucide="instagram" class="w-5 h-5 text-sky-600"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="rounded-3xl overflow-hidden shadow-xl h-96 md:h-auto">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.27!2d36.84!3d-1.22!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15e5aa9c1e0d%3A0x2e94f84fcb5b5d68!2sThika%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1"
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 400px;" 
+            allowfullscreen="" 
+            loading="lazy"
+            class="rounded-3xl">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="inline-flex items-center gap-2 bg-gold-50 text-gold-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          FAQ
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Common <span class="text-gold-500">Questions</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4" id="faqContainer">
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">How long do lash extensions last?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed">With proper aftercare, lash extensions last 4-6 weeks, which is the natural lash growth cycle. We recommend refills every 2-3 weeks to keep your set looking full and fresh.</p>
+          </div>
+        </div>
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">Do lash extensions damage natural lashes?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed">When applied correctly by a certified professional, lash extensions do NOT damage your natural lashes. We use the proper weight and length ratio to ensure your natural lashes remain healthy and strong.</p>
+          </div>
+        </div>
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">How does the deposit work?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed">A refundable KSH 200 deposit via M-Pesa is required to confirm your booking. This deposit is deducted from your final bill on the day of your appointment. If you reschedule with 24+ hours notice, your deposit moves to the new date.</p>
+          </div>
+        </div>
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">Do you offer house calls?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed">Yes! We offer house call services for your convenience. Just select "House Call" when booking and share your location via WhatsApp. Sheshe will come fully equipped to give you gorgeous lashes in the comfort of your own home. 🏠</p>
+          </div>
+        </div>
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">What's the difference between Cat Eye, Wispy, and Wet Set?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed"><strong>Cat Eye:</strong> Lashes are longer at the outer corners for a sultry, elongated feline look. <strong>Wispy (Spikes):</strong> Alternating lengths create a textured, spiky, feathery appearance. <strong>Wet Set:</strong> Glossy, just-stepped-out-of-the-pool look with spiky fans and a wet effect. Each style is available in different volume levels!</p>
+          </div>
+        </div>
+        <div class="faq-item bg-white rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="toggleFaq(this)">
+            <span class="font-semibold pr-4">What if I have sensitive eyes?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-navy-400 flex-shrink-0 faq-icon transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-gray-500 text-sm leading-relaxed">We offer sensitive/low-fume adhesive options for clients with sensitive eyes. Just let us know during your consultation or mention it in the special requests when booking, and we'll make sure to use the gentlest products for your comfort and safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
+            </div>
+            <span class="font-display text-xl font-bold">Lashed & <span class="text-sky-300">Bloomed</span></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Premium lash extensions by Sheshe. Enhancing your natural beauty, one lash at a time. House calls available! 🏠</p>
+          <div class="mt-6 flex gap-3">
+            <a href="https://wa.me/254793833776" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition" title="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lashed_by_sh3she" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-500 transition" title="TikTok">
+              <i data-lucide="music" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-500 transition" title="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#services" class="hover:text-sky-300 transition">Services</a></li>
+            <li><a href="#pricing" class="hover:text-sky-300 transition">Pricing</a></li>
+            <li><a href="#gallery" class="hover:text-sky-300 transition">Gallery</a></li>
+            <li><a href="#testimonials" class="hover:text-sky-300 transition">Reviews</a></li>
+            <li><a href="#booking" class="hover:text-sky-300 transition">Book Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#services" class="hover:text-sky-300 transition">Cat Eye</a></li>
+            <li><a href="#services" class="hover:text-sky-300 transition">Wispy (Spikes)</a></li>
+            <li><a href="#services" class="hover:text-sky-300 transition">Wet Set</a></li>
+            <li><a href="#services" class="hover:text-sky-300 transition">Classic</a></li>
+            <li><a href="#services" class="hover:text-sky-300 transition">Colour & Charm Add-Ons</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Around Thika Road</li>
+            <li>Nairobi, Kenya</li>
+            <li class="mt-3">+254 793 833 776</li>
+            <li>WhatsApp: 0793833776</li>
+            <li class="mt-3">TikTok: @lashed_by_sh3she</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">&copy; 2025 Lashed and Bloomed BY SHESHE. All rights reserved.</p>
+        <div class="flex gap-6 text-sm text-gray-500">
+          <a href="#" class="hover:text-sky-300 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-sky-300 transition">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button (mobile) -->
+  <a href="https://wa.me/254793833776" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg shadow-green-300/40 hover:scale-110 transition-transform md:hidden">
+    <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
+  </a>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-white shadow-lg border border-navy-100 flex items-center justify-center hover:shadow-xl transition-all duration-300 opacity-0 pointer-events-none hidden md:flex">
+    <i data-lucide="chevron-up" class="w-5 h-5 text-navy-600"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('active');
+      mobileOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenuFn() {
+      mobileMenu.classList.remove('active');
+      mobileOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFn);
+    mobileOverlay.addEventListener('click', closeMobileMenuFn);
+    mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenuFn));
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+      } else {
+        navbar.classList.remove('shadow-md');
+      }
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.remove('opacity-0', 'pointer-events-none');
+        backToTop.classList.add('opacity-100');
+      } else {
+        backToTop.classList.add('opacity-0', 'pointer-events-none');
+        backToTop.classList.remove('opacity-100');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Testimonial carousel
+    const track = document.getElementById('testimonialTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+
+    function getVisibleSlides() {
+      if (window.innerWidth >= 1024) return 3;
+      if (window.innerWidth >= 768) return 2;
+      return 1;
+    }
+
+    function getTotalSlides() {
+      return track.children.length;
+    }
+
+    function updateCarousel() {
+      const visibleSlides = getVisibleSlides();
+      const maxSlide = getTotalSlides() - visibleSlides;
+      if (currentSlide > maxSlide) currentSlide = maxSlide;
+      if (currentSlide < 0) currentSlide = 0;
+      const slideWidth = 100 / visibleSlides;
+      track.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      const visibleSlides = getVisibleSlides();
+      const maxSlide = getTotalSlides() - visibleSlides;
+      if (currentSlide < maxSlide) {
+        currentSlide++;
+        updateCarousel();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', updateCarousel);
+
+    // FAQ toggle
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = !content.classList.contains('hidden');
+
+      // Close all
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => {
+        i.style.transform = 'rotate(0deg)';
+      });
+
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(45deg)';
+      }
+    }
+
+    // Booking form
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingSuccess = document.getElementById('bookingSuccess');
+
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      bookingForm.classList.add('hidden');
+      bookingSuccess.classList.remove('hidden');
+    });
+
+    // Scroll animations (Intersection Observer)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card, .pricing-card, .faq-item, .policy-card').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+
+    // Set min date for booking to today
+    const dateInput = document.querySelector('input[type="date"]');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  </script>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+</body>
+</html>
